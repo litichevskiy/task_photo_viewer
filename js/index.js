@@ -14,17 +14,23 @@
 
 				storage.addElement({
 					name :itemFile.name,
-					size :itemFile.size
+					size :itemFile.size,
+					id   : counter
 				}, counter);
 
 				var reader = new FileReader();
-  				reader.onload = (function( func, id ) {
+  				reader.onload = (function( func, obj ) {
 
   				  	return function(event) {
-  				    		return func(event.target.result, id)
+  				  			obj.src = event.target.result;
+  				    		return func( obj );
   					};
 
-  				})( mappingElements.createElement, counter );
+  				})( mappingElements.createElement, {
+  					id   : counter,
+  					name : itemFile.name,
+					size : itemFile.size
+  				} );
 
   			reader.readAsDataURL( itemFile );
 			counter++;

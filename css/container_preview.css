@@ -1,10 +1,8 @@
 .containerFoto{
 	width: 100%;
 	height: 100%;
-	position: relative;
 }
 .ListFoto{
-
 	width: 100%;
     list-style-type: none;
     margin: 0;
@@ -21,6 +19,9 @@
 	width:inherit;
 	height:inherit;
 	object-fit: cover;
+}
+.preveiw:hover{
+	cursor: pointer;
 }
 .bigSizeFoto{
 	position:absolute;

@@ -12,3 +12,35 @@ input[type="file"]{
 input[type="file"]:hover{
 	cursor: pointer;
 }
+.selectSort{
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	display: inline-block;
+	position: absolute;
+	left: -100%;
+	margin: 1em 0 0 1em;
+	background-color: #FFDEC3;
+	border-radius: 10px;
+}
+.itemIelectSort{
+	color: grey;
+	margin-bottom: 0.3em;
+	cursor: pointer;
+	padding: 0 0.2em 0 0.2em;
+	border-radius: 0.6em;
+}
+.itemIelectSort:hover{
+	background-color: #FFDAA4;
+	color: black;
+}
+.displayListSort{
+	cursor: pointer;
+	font-size: large;
+}
+input[data-role="displayListSort"]{
+	display: none;
+}
+input[data-role="displayListSort"]:checked ~ .selectSort{
+	left:inherit;
+}
