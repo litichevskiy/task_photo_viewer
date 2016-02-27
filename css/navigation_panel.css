@@ -1,0 +1,14 @@
+.navigationPanel{
+	background-color: #F7F1F1;
+}
+.selectFile{
+	display: inline-block;
+	margin: 1em 0 1em 2em;
+}
+input[type="file"]{
+	outline: none;
+	font-size: large;
+}
+input[type="file"]:hover{
+	cursor: pointer;
+}
