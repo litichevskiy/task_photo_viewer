@@ -16,8 +16,8 @@
 					indexStorage[id]['widthInPx']  = size.width;
 					indexStorage[id]['heightInPx'] = size.height;
 
-					// index = JSON.stringify( indexStorage[id] )
-					// localStorage.setItem( id, index )
+					index = JSON.stringify( indexStorage[id] )
+					localStorage.setItem( id, index )
 				}
 			},
 
@@ -26,7 +26,7 @@
 
 				delete indexStorage[id];
 
-				// localStorage.removeItem( id );
+				localStorage.removeItem( id );
 			},
 
 			getSortAllFoto : function( data, _reverse ){
