@@ -1,6 +1,6 @@
 .containerFoto{
 	width: 100%;
-	height: 100%;
+	position: absolute;
 }
 .ListFoto{
 	width: 100%;
@@ -24,7 +24,7 @@
 	cursor: pointer;
 }
 .bigSizeFoto{
-	position:absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -38,7 +38,7 @@
 }
 .transparentLayer{
 	display: none;
-	position: absolute;
+	position: inherit;
 	background-color: #79B7B9;
 	opacity: 0.5;
 	height: 100%;
